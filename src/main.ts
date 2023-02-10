@@ -1,3 +1,3 @@
-import imageUrl from './assets/images/scene.png';
+import './a.less';
 
-console.log(imageUrl);
+console.log(123);

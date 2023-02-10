@@ -10,7 +10,7 @@ specifiers:
   glob: ^8.0.3
   less: ^4.1.3
   vite: ^4.0.4
-  vite-plugin-css-injected-by-js: ^2.3.1
+  vite-plugin-css-injected-by-js: ^3.0.0
   vite-plugin-vue-type-imports: ^0.2.4
   vue: ^2.7.14
 
@@ -27,7 +27,7 @@ devDependencies:
   glob: 8.0.3
   less: 4.1.3
   vite: 4.0.4_dprl76twtlijnqpm3fdjsbkzqm
-  vite-plugin-css-injected-by-js: 2.3.1_vite@4.0.4
+  vite-plugin-css-injected-by-js: 3.0.0_vite@4.0.4
   vite-plugin-vue-type-imports: 0.2.4_vite@4.0.4+vue@2.7.14
 
 packages:
@@ -1530,8 +1530,8 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /vite-plugin-css-injected-by-js/2.3.1_vite@4.0.4:
-    resolution: {integrity: sha512-IPd5YJWFtQWO99F/C3qhyBqJnzkbeltn0Lefj0eit8whc9XFjRjL8EA+nVITDb7NBoM0reRqXvNmxWss3BzQgQ==}
+  /vite-plugin-css-injected-by-js/3.0.0_vite@4.0.4:
+    resolution: {integrity: sha512-gJxLYkD0rLxGnqBHkFm0bUlYq9VWRT0Fr6lHYD3uRzgW5IGMSdLbNDapXUV57SSlYpvZUrXSlne1Y89BWF1Mgw==}
     peerDependencies:
       vite: '>2.0.0-0'
     dependencies:
