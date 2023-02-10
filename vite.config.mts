@@ -63,9 +63,7 @@ function getCommonPlugins(options) {
             ],
         }),
         vitePluginVueTypeImports(),
-        vitePluginCssInjectedByJs({
-            relativeCSSInjection: true,
-        }),
+        vitePluginCssInjectedByJs({}),
     ];
 }
 
