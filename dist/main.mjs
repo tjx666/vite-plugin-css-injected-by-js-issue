@@ -3,7 +3,7 @@
   try {
     if (typeof document != "undefined") {
       var elementStyle = document.createElement("style");
-      elementStyle.appendChild(document.createTextNode(""));
+      elementStyle.appendChild(document.createTextNode(".app {\n  background-color: #fff;\n}"));
       document.head.appendChild(elementStyle);
     }
   } catch (e) {

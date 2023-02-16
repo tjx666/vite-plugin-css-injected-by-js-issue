@@ -41,29 +41,13 @@ function getCommonPlugins(options) {
                     libName: 'lodash',
                     libDirectory: '',
                     camel2DashComponentName: false,
-                },
-                {
-                    libName: '@gaoding/gd-antd',
-                    libDirectory: 'es',
-                    style: (name) => `@gaoding/gd-antd/es/${name}/style/css.js`,
-                },
-                {
-                    libName: '@gaoding/gdui',
-                    libDirectory: 'lib',
-                },
-                {
-                    libName: '@gaoding/gd-materials',
-                    libDirectory: 'lib',
-                },
-                {
-                    libName: '@gaoding/gd-components',
-                    libDirectory: 'lib',
-                    camel2DashComponentName: false,
-                },
+                }
             ],
         }),
         vitePluginVueTypeImports(),
-        vitePluginCssInjectedByJs({}),
+        vitePluginCssInjectedByJs({
+            relativeCSSInjection: true
+        }),
     ];
 }
 
@@ -100,7 +84,7 @@ export function getSplitConfig(customConfig, options = {}) {
                 target: 'es2015',
                 minify: false,
                 sourcemap: false,
-                cssCodeSplit: false,
+                cssCodeSplit: true,
                 lib: {
                     entry: entries,
                     formats: ['es', 'cjs'],
